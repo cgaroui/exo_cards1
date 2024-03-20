@@ -10,11 +10,15 @@
 
 #container {
     display: flex;
+   
+    grid-template-columns: repeat(3, 1fr);
     min-height: 100vh;
     background:rgba(68, 117,136,0.548);
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .card{
@@ -24,6 +28,7 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     transition: 0.5s;
     overflow: hidden;
+    
    
     
 
@@ -99,3 +104,16 @@
     opacity: 0;
 
 }
+
+
+
+
+@media screen and (max-width: 1023px) {
+    #container {
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
